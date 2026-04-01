@@ -30,10 +30,9 @@ You should see an error during training.
 
 Run `train.py` and examine the error. Your goal is to answer:
 
-1. What type of error occurs?
-2. Which line in `dataset.py` raises the error?
-3. What is the filename of the corrupted sample?
-4. Why does this file cause an error? (Hint: open the file and look at its contents)
+1. Which line in `dataset.py` raises the error?
+2. What is the filename of the corrupted sample?
+3. Why does this file cause an error? (Hint: open the file and look at its contents)
 
 
 ### Debugging Strategy
@@ -101,3 +100,19 @@ git show
 # End bisect session
 git bisect reset
 ```
+
+
+## Submission
+
+Submit your answers on Blackboard.
+
+**Task 1**: Answer the following questions in Blackboard:
+
+1. Which line in `dataset.py` raises the error?
+2. What is the filename of the corrupted sample?
+3. Why does this file cause an error? (Hint: open the file and look at its contents)
+
+**Task 2**: 
+
+4. Upload a screenshot showing the `git bisect run` process and results
+5. Provide the commit hash that introduced the corrupted file
