@@ -10,7 +10,7 @@
             "type": "debugpy",
             "request": "launch",
             "program": "train.py",
-            "console": "integratedTerminal"
+            "console": "integratedTerminal",
             "python": ".venv/bin/python"
         }
     ]
