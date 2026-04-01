@@ -37,21 +37,12 @@ Run `train.py` and examine the error. Your goal is to answer:
 
 ### Debugging Strategy
 
-Add a try-except wrapper in `train.py` to identify the problematic sample, then use the debugger to inspect the error:
+Use VS Code's exception breakpoint to catch the error and inspect the problematic sample:
 
-1. Wrap the data loading in a try-except block:
-
-```python
-try:
-    waveforms = batch['waveform']
-except Exception as e:
-    print(f"Error at index {batch_idx}: {e}")
-    raise
-```
-
-2. In VS Code, enable "Raised Exceptions" under the Breakpoints panel in Run and Debug view.
-
-3. Run the debugger. It will pause at the exact line where the error occurs, and you can inspect all local variables to understand what went wrong.
+1. Open the Run and Debug panel in VS Code
+2. In the Breakpoints section, enable "Uncaught Exceptions"
+3. Run `train.py` with the debugger (F5)
+4. When the error occurs, VS Code pauses at the exact line. Inspect the local variables to see which sample index and filename caused the error.
 
 
 ## Task 2: Automated Git Bisect
