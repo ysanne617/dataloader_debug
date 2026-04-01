@@ -35,7 +35,25 @@ Run `train.py` and examine the error. Your goal is to answer:
 3. What is the filename of the corrupted sample?
 4. Why does this file cause an error? (Hint: open the file and look at its contents)
 
----
+
+### Debugging Strategy
+
+Add a try-except wrapper in `train.py` to identify the problematic sample, then use the debugger to inspect the error:
+
+1. Wrap the data loading in a try-except block:
+
+```python
+try:
+    waveforms = batch['waveform']
+except Exception as e:
+    print(f"Error at index {batch_idx}: {e}")
+    raise
+```
+
+2. In VS Code, enable "Raised Exceptions" under the Breakpoints panel in Run and Debug view.
+
+3. Run the debugger. It will pause at the exact line where the error occurs, and you can inspect all local variables to understand what went wrong.
+
 
 ## Task 2: Automated Git Bisect
 
