@@ -107,5 +107,5 @@ Submit your answers on Blackboard.
 
 **Task 2**: 
 
-4. Upload a screenshot showing the `git bisect run` process and results
+4. Upload a screenshot showing the `git bisect run` results
 5. Provide the commit hash that introduced the corrupted file
