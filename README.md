@@ -15,7 +15,7 @@ git clone https://github.com/ysanne617/dataloader_debug.git
 cd dataloader_debug
 uv sync
 ```
-Download data.zip from [this link](https://drive.google.com/file/d/16nTV78vI3VzOixvv2uIt0i_rQoSlWA91/view?usp=sharing)
+Download data.zip from [this link](https://gocuhk-my.sharepoint.com/:u:/g/personal/ystian_cuhk_edu_hk/IQBeRtRyJFycQKac-TVISLzkAQImoaP1_JMIAZfypt4FdlE?e=2X9pw8)
 
 Unzip it into the `data/` folder and place it inside the `dataloader_debug/` 
 
