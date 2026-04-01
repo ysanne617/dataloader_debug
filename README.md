@@ -11,7 +11,7 @@ In this exercise, you will debug a PyTorch DataLoader that crashes during traini
 ## Setup
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/ysanne617/dataloader_debug.git
 cd dataloader_debug
 uv sync
 ```
