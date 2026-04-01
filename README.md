@@ -15,11 +15,27 @@ git clone https://github.com/ysanne617/dataloader_debug.git
 cd dataloader_debug
 uv sync
 ```
+Download data.zip from [this link](https://drive.google.com/file/d/16nTV78vI3VzOixvv2uIt0i_rQoSlWA91/view?usp=sharing)
+
+Unzip it into the `data/` folder and place it inside the `dataloader_debug/` 
+
+Your working directory should now have the following structure:
+```
+dataloader_debug/
+├── data/               # Waveform data files
+├── dataset.py          # WaveformDataset class
+├── train.py            # Training script
+├── filelist.txt        # List of training files
+├── pyproject.toml      # Dependencies
+├── uv.lock
+└── README.md
+```
 
 Verify the problem exists:
 
 ```bash
-uv run python train.py
+source .venv/bin/activate
+python train.py
 ```
 
 You should see an error during training.
