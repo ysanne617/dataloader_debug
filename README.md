@@ -37,6 +37,8 @@ Run `train.py` and examine the error. Your goal is to answer:
 
 ### Debugging Strategy
 
+First, change `num_workers=4` to `num_workers=0` in `train.py`. When `num_workers > 0`, data loading runs in separate worker processes where the debugger cannot reach. Setting it to 0 ensures data loading happens in the main process.
+
 Use VS Code's exception breakpoint to catch the error and inspect the problematic sample:
 
 1. Open the Run and Debug panel in VS Code
